@@ -1,0 +1,97 @@
+ :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --header-bg: #0077cc;
+      --footer-bg: #ddd;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #f4f4f4;
+      --header-bg: #222;
+      --footer-bg: #333;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: var(--header-bg);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 150px;
+      margin: 10px;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--footer-bg);
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    .toggle-theme {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #0077cc;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    article {
+      margin-bottom: 20px;
+      padding: 10px;
+      border-left: 4px solid #0077cc;
+      background-color: rgba(0,0,0,0.03);
+    }
+
+    audio {
+      display: block;
+      margin: 20px auto;
+    }
