@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Wahyu</title>
+  <link rel="stylesheet" type="text/css" href="style complete.css">
+</head>
+<body>
+
+  <button class="toggle-theme" onclick="toggleTheme()">🌙 Tema Gelap</button>
+
+  <header>
+    <h1>Halo, Saya Wahyu 👋</h1>
+    <p>Selamat datang di halaman web saya</p>
+  </header>
+
+  <section>
+    <audio controls autoplay loop>
+      <source src="musik-latar.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+    <h2>Tentang Saya</h2>
+    <p>Saya penggemar teknologi dan desain web, suka belajar dan berbagi.</p>
+
+    <h2>Galeri</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/150?text=Foto+1" alt="Foto 1">
+      <img src="https://via.placeholder.com/150?text=Foto+2" alt="Foto 2">
+      <img src="https://via.placeholder.com/150?text=Foto+3" alt="Foto 3">
+    </div>
+
+    <h2>Kontak Saya</h2>
+    <form>
+      <label>Nama:</label>
+      <input type="text" name="nama" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Pesan:</label>
+      <textarea name="pesan" rows="5" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <h2>Blog Saya</h2>
+    <article>
+      <h3>Belajar HTML dari Nol</h3>
+      <p>Hari ini saya mulai belajar HTML. Ternyata menyenangkan dan mudah dipahami!</p>
+      <small>Ditulis: 21 September 2025</small>
+    </article>
+    <article>
+      <h3>Kenapa Saya Suka Coding</h3>
+      <p>Coding itu seperti seni. Kamu bisa menciptakan apa saja dari nol.</p>
+      <small>Ditulis: 18 September 2025</small>
+    </article>
+  </section>
+
+  <footer>
+    &copy; 2025 Wahyu. Dibuat dengan ❤️ di Jawa Timur.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+
+</body>
+</html>
